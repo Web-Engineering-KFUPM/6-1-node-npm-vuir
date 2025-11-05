@@ -61,7 +61,10 @@ Hints:
 Example:
   const operation = process.argv[2];
   const numbers = process.argv.slice(3);
-
+*/
+  const operation = process.argv[2];
+  const numbers = process.argv.slice(3);
+/*
 ===================================================================
 TODO 3: Validate Input and Calculate (in calculator.js)
 ===================================================================
@@ -90,7 +93,32 @@ Example structure:
   }
 
   console.log(`Result: ${result}`);
+*/
+  if (!isValidOperation(operation)) {
+    console.log("Invalid operation. Use: add, subtract, multiply, or divide");
+  }
+  else{
+  const nums = parseNumbers(numbers);
+  let result;
 
+  switch (operation) {
+    case "add":
+      result = add(nums);
+      break;
+    case "subtract":
+      result = subtract(nums);
+        break;
+    case "divide":
+      result = divide(nums);
+        break;
+    case "multiply":
+      result = multiply(nums);
+        break;
+  }
+
+  console.log(`Result: ${result}`);
+}
+/*
 ===============================================================
 TODO 4: Create Math Operation Functions (in utils/operations.js)
 ===============================================================
