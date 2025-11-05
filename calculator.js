@@ -62,6 +62,7 @@ Example:
   const operation = process.argv[2];
   const numbers = process.argv.slice(3);
 */
+  
   const operation = process.argv[2];
   const numbers = process.argv.slice(3);
 /*
@@ -96,6 +97,7 @@ Example structure:
 */
   if (!isValidOperation(operation)) {
     console.log("Invalid operation. Use: add, subtract, multiply, or divide");
+    process.exit(1);
   }
   else{
   const nums = parseNumbers(numbers);

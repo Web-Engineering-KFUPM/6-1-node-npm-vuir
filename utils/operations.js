@@ -11,10 +11,9 @@ export function multiply(numbers) {
 }
 
 export function divide(numbers) {
-  return 
   if (numbers.slice(1).some((num) => num === 0)) {
     return NaN;
   }
-  return numbers.slice(1).reduce((total, num) => total / num, numbers[0]);
+    return numbers.slice(1).reduce((total, num) => total / num, numbers[0]);
 }
 
