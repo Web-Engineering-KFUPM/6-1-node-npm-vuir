@@ -39,7 +39,12 @@ Example:
   import { add, subtract } from "./utils/operations.js";
   import { parseNumbers, isValidOperation } from "./utils/parser.js";
   import _ from "lodash";
+*/
+  import { add, subtract, multiply, divide } from "./utils/operations.js";
+  import { parseNumbers, isValidOperation } from "./utils/parser.js";
+  import _ from "lodash";
 
+/*  
 ===================================================================
 TODO 2: Parse Command Line Arguments (in calculator.js)
 ===================================================================
