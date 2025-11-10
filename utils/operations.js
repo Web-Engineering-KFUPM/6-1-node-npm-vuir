@@ -16,4 +16,3 @@ export function divide(numbers) {
   }
     return numbers.slice(1).reduce((total, num) => total / num, numbers[0]);
 }
-
